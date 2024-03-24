@@ -456,9 +456,10 @@ p {
 }
 .icon-list-footer {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 16px;
   margin-top: 8px;
+  margin-left: 0;
 }
 
 .icon-list-item-footer {
@@ -491,7 +492,7 @@ p {
   letter-spacing: 0.02em;
   text-align: left;
   color: #ffffff;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 }
 /* MODAL WINDOW */
 .backdrop {
@@ -582,6 +583,7 @@ p {
   margin-bottom: 8px;
   font-size: 12px;
   margin-top: 8px;
+  text-decoration-skip-ink: none;
 }
 
 .modal-input-wrap {
@@ -632,10 +634,31 @@ p {
 }
 
 .Privacy-Policy {
+  display: flex;
+  align-items: baseline;
   line-height: 133%;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  color: var(--iris);
+  color: #4d5ae5;
+}
+
+.custom-check {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid #8e8f99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+.input-check-icon {
+  /* color: #f4f4fd; */
+}
+
+.modal-field-check :checked + .form-label span {
+  background-color: #4d5ae5;
+  border: none;
 }
 
 .modal-submit {
@@ -658,23 +681,34 @@ p {
   margin: auto;
 }
 
+.subscribe-list-footer {
+  display: flex;
+  /* justify-content: center; */
+  gap: 24px;
+  margin-top: 8px;
+  margin-left: 0;
+  padding-left: 0;
+}
 .social-subscribe {
-  width: 208px;
+  width: 453px;
   display: block;
   align-items: baseline;
-  margin-left: 54px;
+  margin-left: 80px;
 }
+
 .email-subscribe {
   width: 264px;
   height: 40px;
   padding-left: 0;
+  background-color: transparent;
+  color: #ffffff;
 }
 
 .subscribe-submit {
   border-radius: 4px;
-  padding: 16px 16px;
-  padding-left: 60px;
-  width: 250px;
+  padding-top: 6px;
+  padding-left: 24px;
+  width: 165px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
@@ -686,10 +720,30 @@ p {
   text-align: center;
   color: white;
   display: flex;
-  box-align: center;
-  margin: auto;
+  gap: 10px;
+  align-items: center;
+}
+
+.subscribe-item-footer-mail {
+  border: 1px solid white;
+  border-radius: 4px;
+  width: 264px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: white;
 }
 
 .subscribe-item-footer {
-  margin-top: 8px;
+  border-radius: 4px;
+  width: 165px;
+  display: flex;
+  align-items: center;
+}
+
+.subscribe-icon {
+  fill: #f4f4fd;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
 }
