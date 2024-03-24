@@ -444,7 +444,99 @@
             </li>
           </ul>
         </div>
+        <!-- Social subscribe -->
+         <div class="social-subscribe">
+          <p class="social-text">Subscribe</p>
+          <ul class="icon-list-footer">
+            <li class="subscribe-item-footer">
+              <input
+            type="email"
+            name="user-email"
+            class="email-subscribe"
+            id="user-email"
+            placeholder="E-mail"/>
+            </li>
+            <li class="subscribe-item-footer">
+                <button type="submit" class="subscribe-submit">Subscribe</button>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
+
+    <!-- MODAL WINDOW -->
+
+    <div class="backdrop">
+      <div class="modal">
+        <button type="button" class="modal-close">
+          <svg class="modal-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+        <p class="modal-p">Leave your contacts and we will call you back</p>
+        <div class="modal-field">
+          <label class="form-label">Name</label>
+ <!-- input 1 -->
+          <div class="modal-input-wrap">
+            <input
+              type="text"
+              name="user-name"
+              class="modal-input"
+              id="user-name"
+            />
+            <svg class="modal-icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+            </svg>
+          </div>
+          <!-- input 2 -->
+
+          <label class="form-label">Phone</label>
+          <div class="modal-input-wrap">
+          <input
+            type="tel"
+            name="user-phone"
+            class="modal-input"
+            required
+            id="user-phone"
+          />
+          <svg class="modal-icon" width="13" height="13">
+            <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+          </svg>
+        </div>
+
+        <!-- input 3 -->
+
+        <label class="form-label">Email </label>
+        <div class="modal-input-wrap">
+          <input
+            type="email"
+            name="user-email"
+            class="modal-input"
+            id="user-email"
+          />
+          <svg class="modal-icon" width="15" height="12">
+            <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+          </svg>
+        </div>
+
+        <!-- Text area -->
+        <div class="modal-field">
+          <label class="form-label"> Comment</label>
+          <textarea
+            name="feedback"
+            rows="5"
+            placeholder="Text input"
+            class="modal-text"
+          ></textarea>
+        </div>
+        <!-- Checkbox -->
+        <div class="modal-field-check">
+          <input type="checkbox" name="language" value="true" id="Privacy policy" class="input-check" width="13px" height="13px"/>
+          <label class="form-label" for="Privacy policy">I accept the terms and conditions of the <a href="" class="Privacy-Policy"> Privacy Policy</a></label>
+        </div>
+        <!-- Button -->
+        <button type="submit" class="modal-submit">Send</button>
+      </div>
+    </div>
   </body>
 </html>
