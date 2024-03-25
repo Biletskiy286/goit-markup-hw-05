@@ -1,31 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Webstudio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./css/styles.css"/>
   </head>
   <body>
     <header class="header">
       <div class="container container-header">
         <nav class="navigation">
           <a href="./index.html" class="logo-header"
-            >Web<span class="logo-blu">Studio</span></a
-          >
+            >Web<span class="logo-blu">Studio</span></a>
           <ul class="nav-list">
             <li>
               <a href="./index.html" class="nav-header current">Studio</a>
@@ -38,13 +28,11 @@
           <ul class="address-list">
             <li>
               <a class="address-item" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+                >info@devstudio.com</a>
             </li>
             <li>
               <a class="address-item" href="tel:+110001111111">
-                +11 (000) 111-11-11</a
-              >
+                +11 (000) 111-11-11</a>
             </li>
           </ul>
         </address>
@@ -447,8 +435,28 @@
         <!-- Social subscribe -->
         <div class="social-subscribe">
           <p class="social-text">Subscribe</p>
-          <ul class="subscribe-list-footer">
-            <li class="subscribe-item-footer-mail">
+            <form class="subscribe-list-footer">
+              <label class="subscribe-item-footer-mail">
+                <input
+                type="email"
+                name="user-email"
+                class="email-subscribe"
+                id="user-email"
+                placeholder="E-mail"
+              />
+              <label class="subscribe-item-footer">
+                <button type="submit" class="subscribe-submit">
+                  Subscribe<svg class="subscribe-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+              </label>
+            </form>
+
+
+
+          <!-- <ul class="subscribe-list-footer">
+            <li >
               <input
                 type="email"
                 name="user-email"
@@ -457,14 +465,11 @@
                 placeholder="E-mail"
               />
             </li>
-            <li class="subscribe-item-footer">
-              <button type="submit" class="subscribe-submit">
-                Subscribe<svg class="subscribe-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-icon-send"></use>
-                </svg>
-              </button>
+            <li >
+             
             </li>
-          </ul>
+          </ul> -->
+          </form>
         </div>
       </div>
     </footer>
@@ -511,12 +516,7 @@
           <!-- input 3 -->
           <label class="form-label">Email </label>
           <div class="modal-input-wrap">
-            <input
-              type="email"
-              name="user-email"
-              class="modal-input"
-              id="user-email"
-            />
+            <input type="email" name="user-email" class="modal-input" id="user-email-modal"/>
             <svg class="modal-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
             </svg>
@@ -534,23 +534,13 @@
           </div>
           <!-- Checkbox -->
           <div class="modal-field-check">
-            <input
-              type="checkbox"
-              name="Privacy-policy"
-              value="true"
-              id="Privacy policy"
-              class="input-check visually-hidden"
-              width="13px"
-              height="13px"
-            />
-            <label class="form-label" for="Privacy policy"
+            <input type="checkbox" name="privacy-policy" value="true" id="privacy-policy" class="input-check visually-hidden">
+            <label class="form-label" for="privacy-policy"
               ><span class="custom-check"
                 ><svg class="input-check-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-Vector-1"></use></svg
-              ></span>
+                  <use href="./images/icons.svg#icon-Vector-1"></use></svg></span>
               accept the terms and conditions of the
-              <a href="" class="Privacy-Policy"> Privacy Policy</a></label
-            >
+              <a href="" class="privacy-policy"> Privacy Policy</a></label>
           </div>
           <!-- Button -->
           <button type="submit" class="modal-submit">Send</button>

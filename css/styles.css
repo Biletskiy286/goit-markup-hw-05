@@ -492,8 +492,14 @@ p {
   letter-spacing: 0.02em;
   text-align: left;
   color: #ffffff;
-  /* margin-bottom: 16px; */
+  margin-bottom: 16px;
 }
+.subscribe-form {
+  display: flex; 
+  gap: 24px;
+}
+
+
 /* MODAL WINDOW */
 .backdrop {
   position: fixed;
@@ -633,7 +639,7 @@ p {
   flex-direction: row;
 }
 
-.Privacy-Policy {
+.privacy-policy {
   display: flex;
   align-items: baseline;
   line-height: 133%;
@@ -692,6 +698,7 @@ p {
 .social-subscribe {
   width: 453px;
   display: block;
+  gap: 16px;
   align-items: baseline;
   margin-left: 80px;
 }
@@ -699,7 +706,7 @@ p {
 .email-subscribe {
   width: 264px;
   height: 40px;
-  padding-left: 0;
+  padding-left: 65px;
   background-color: transparent;
   color: #ffffff;
 }
