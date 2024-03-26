@@ -673,7 +673,7 @@ p {
   padding-left: 60px;
   width: 169px;
   height: 56px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15); */
   background: #4d5ae5;
   font-family: var(--font-family);
   font-weight: 500;
@@ -706,7 +706,7 @@ p {
 .email-subscribe {
   width: 264px;
   height: 40px;
-  padding-left: 65px;
+  padding-left: 24px;
   background-color: transparent;
   color: #ffffff;
 }
@@ -717,7 +717,6 @@ p {
   padding-left: 24px;
   width: 165px;
   height: 40px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
   font-family: var(--font-family);
   font-weight: 500;
@@ -741,6 +740,10 @@ p {
   color: white;
 }
 
+.email-subscribe::placeholder {
+  color:white;
+}
+
 .subscribe-item-footer {
   border-radius: 4px;
   width: 165px;
@@ -750,7 +753,7 @@ p {
 
 .subscribe-icon {
   fill: #f4f4fd;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
   display: flex;
   align-items: center;
 }
