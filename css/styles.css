@@ -535,13 +535,10 @@ p {
 }
 
 .modal-field {
-  margin-bottom: 8px;
+margin-bottom: 8px;
 }
 
 .modal-p {
-  width: 24px;
-  height: 24px;
-  padding: 0;
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -564,14 +561,12 @@ p {
 .modal-close {
   width: 24px;
   height: 24px;
-  padding: 0;
   background-color: #e7e9fc;
   border: 1px solid #434455;
   border-radius: 50%;
-  top: 50%;
+  top: 24px;
   position: absolute;
   right: 24px;
-  left: 16px;
   display: flex;
   box-align: center;
   align-items: center;
@@ -580,7 +575,16 @@ p {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 24px 24px 24px;
+}
+
+.modal-icon-close {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition-duration: 300ms;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #4d5ae5;
 }
 
 .modal-close:focus,
@@ -613,13 +617,15 @@ p {
   color: #8083bf;
 }
 
-.form-label {
-  display: block;
-  margin-bottom: 4px;
-  font-size: 12px;
-  margin-top: 8px;
-  text-decoration-skip-ink: none;
-  color: var(--light-slate; #8e8f99);
+.modal-icon {
+  display: flex;
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition-duration: 300ms;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #4d5ae5;
 }
 
 .modal-input-wrap {
@@ -627,51 +633,42 @@ p {
   position: relative;
 }
 
-.modal-icon {
-  display: flex;
-  position: absolute;
-  left: 16px
-  top: 50%;
-  transform: translateY(-50%);
-  transition-duration: 300ms;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: #4D5AE5;
-}
-
 .modal-input:focus,
 .modal-input:hover {
-  fill: #4D5AE5;
+  fill: #4d5ae5;
 }
 
 .modal-input:focus + .modal-icon,
 .modal-input:hover + .modal-icon {
   fill: #ffffff;
 }
+
 .modal-text {
   width: 100%;
   height: 120px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  border-color: #4D5AE5; 
-  outline: transparent; 
+  border-color: #4d5ae5;
+  outline: transparent;
   transition-duration: 300ms;
   background-color: transparent;
   padding: 8px 16px;
-  resize: none; 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4); 
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-field-check {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   display: flex;
   gap: 8px;
-  /* align-items: center;  */
+  align-items: center;
   flex-direction: row;
 }
+
 .form-label {
   font-family: var(--font-family);
   font-weight: 400;
@@ -681,9 +678,9 @@ p {
   color: var(--light-slate);
   width: 100%;
   display: flex;
+  align-items: center;
   gap: 8px;
   flex-direction: row;
-   border: 1px solid rgba(46, 47, 66, 0.4) 
 }
 
 .privacy-policy {
@@ -706,9 +703,7 @@ p {
   fill: transparent;
 }
 .input-check-icon {
-
-  margin-bottom: 24px; 
-  
+  margin-bottom: 24px;
 }
 
 .modal-field-check :checked + .form-label span {
@@ -718,23 +713,23 @@ p {
 
 .modal-submit {
   display: block;
+  justify-content: center;
+  box-align: center;
+  text-align: center;
+  margin: auto;
   min-width: 169px;
   height: 56px;
-  border: none; 
+  border: none;
   border-radius: 4px;
   padding: 16px 16px;
-  padding-left: 60px;
-  background-color: #4D5AE5;
+  background-color: #4d5ae5;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  text-align: center;
   color: #ffffff;
-  cursor:pointer;
-  box-align: center;
-  margin: auto;
+  cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -745,7 +740,6 @@ p {
 /* FOOTER */
 .subscribe-list-footer {
   display: flex;
-  /* justify-content: center; */
   gap: 24px;
   margin-top: 8px;
   margin-left: 0;
@@ -754,7 +748,6 @@ p {
 
 .icon-list-footer {
   display: flex;
-  /* justify-content: center; */
   gap: 16px;
   margin-top: 8px;
   margin-left: 0;
@@ -822,6 +815,7 @@ p {
 }
 
 .subscribe-icon {
+  border: none;
   fill: #f4f4fd;
   display: flex;
   align-items: center;
